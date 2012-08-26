@@ -1,0 +1,15 @@
+{
+   "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "sandboxed popup"
+   },
+   "description": "A chrome plugin that shows the sandboxrpc framework.",
+   "manifest_version": 2,
+   "minimum_chrome_version": "21",
+   "name": "sandboxedrpc",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "sandbox": {
+      "pages": [ "sandboxed_popup.html" ]
+   },
+   "version": "1"
+}
